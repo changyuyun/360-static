@@ -1,0 +1,15 @@
+{
+  "pages": ["pages/demo/index", "pages/info/index", "pages/home/index", "pages/more/index", "pages/slider/index"],
+  "window": {
+    "enableLargeWindow": true,
+    "showRefreshButton": true,
+    "windowWidth": 600,
+    "windowHeight": 640,
+    "minWindowWidth": 400,
+    "minWindowHeight": 400,
+    "enableResize": true,
+	"showRefreshButton": true
+  },
+  "sdkversion": "1.0.0",
+  "sitemapLocation": "sitemap.json"
+}

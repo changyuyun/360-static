@@ -1,0 +1,37 @@
+<div class="container" style="padding: 25px 25px 40px;">
+	<!-- 轮播 start -->
+	<div class="swiper-container">
+		<se-swiper @change="slideChange" @animation-finish="animationfinish" autoplay>
+			<se-swiper-item :item-id="item" v-for="item of swiper_list_2" :key="item" @click="navigateToInfo()">
+				<se-image :src="item.url" :title="item.title" style="width: 100%; height: 300px;"/>
+			</se-swiper-item>
+		</se-swiper>
+	</div>
+	<!-- 轮播 end -->
+	<!-- tabs start -->
+	<div class="tabs-container">
+		<div class="tabs-item-container">
+			<ul class="tabs-list">
+				<li class="menuItem" :class="{active:index==tabs_current}" v-for="(item,index) in tabs" :key="index" @click="addClass(index)"><a href="javascript:;">{{item.purpose}}</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- tabs end -->
+	<!-- list start -->
+	<div class="list-container">
+		
+		<div class="list-item" :item-id="list_item.id" v-for="list_item of content_list" :key="list_item" @click="navigateToInfo(list_item.id)">
+			<div>
+				<img :src="list_item.url" class="list-item-img" />
+			</div>
+			<div class="list-title">
+				{{list_item.list_title}}
+			</div>
+			<div class="list-sub-content">
+				{{list_item.list_sub_content}}
+			</div>
+		</div>
+		
+	</div>
+	<!-- list end -->
+</div>

@@ -1,0 +1,53 @@
+<div class="container">
+	<div class="swiper-container">
+		<se-swiper @change="slideChange" @animation-finish="animationfinish" autoplay>
+			<se-swiper-item :item-id="item" v-for="item of list" :key="item">
+				slider{{item}}
+			</se-swiper-item>
+		</se-swiper>
+	</div>
+	<div class="tabs-container">
+		<se-tabs layout="center" :activeName="activeName">
+			<se-tab-pane label="php" name="tab_1">
+				<se-scroll-view :scroll-y=true >
+					
+				</se-scroll-view>
+			</se-tab-pane>
+			<se-tab-pane label="python" name="tab_3">
+				<se-scroll-view :scroll-y=true >
+					<ul>
+						<li>content</li>
+						<li>content</li>
+						<li>content</li>
+						<li>content</li>
+						<li>content</li>
+						<li>1</li>
+						<li>1</li>
+						<li>1</li>
+						<li>1</li>
+						<li>1</li>
+						<li>1</li>
+						<li>1</li>
+						<li>1</li>
+						<li>1</li>
+						<li>1</li>
+						<li>1</li>
+						<li>1</li>
+						<li>1</li>
+						<li>1</li>
+					</ul>
+				</se-scroll-view>
+			</se-tab-pane>
+			<se-tab-pane label="java" name="tab_4">
+				<se-scroll-view :scroll-y=true>
+					
+				</se-scroll-view>
+			</se-tab-pane>
+			<se-tab-pane label="算" name="tab_5">
+				<se-scroll-view :scroll-y=true>
+					
+				</se-scroll-view>
+			</se-tab-pane>
+		</se-tabs>
+	</div>
+</div>

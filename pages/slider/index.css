@@ -1,0 +1,31 @@
+.container {
+	background-color: #f5f0f1;
+}
+.swiper-container {
+	margin-top: 10px;
+	border: 1px solid #ccc;
+}
+.se-swiper-item {
+	height: 200px;
+	line-height: 200px;
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+	background-color: #ffaaff;
+}
+.tabs-container {
+	margin-top: 5px;
+	border: 1px solid #CCCCCC;
+}
+.swiper-container {
+	/* position: fixed; */
+	/* top: 50px;
+	z-index: 999; */
+}
+.se-tab-pane {
+	padding-left: -10px;
+}
+.se-scroll-view {
+	width: 100%;
+	height: auto;
+}

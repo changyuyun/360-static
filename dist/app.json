@@ -1,0 +1,47 @@
+{
+  "pages": [
+    {
+      "route": "pages/demo/index",
+      "window": {
+        "navigationBarTitleText": "首页",
+        "navigationBarBackgroundColor": "red"
+      }
+    },
+    {
+      "route": "pages/info/index",
+      "window": {
+        "navigationBarTitleText": "详情",
+        "navigationBarBackgroundColor": "red"
+      }
+    },
+    {
+      "route": "pages/home/index",
+      "window": {
+        "navigationBarTitleText": "首页",
+        "navigationBarBackgroundColor": "red"
+      }
+    },
+    {
+      "route": "pages/more/index",
+      "window": {}
+    },
+    {
+      "route": "pages/slider/index",
+      "window": {
+        "navigationBarTitleText": "轮播图",
+        "navigationBarBackgroundColor": "red"
+      }
+    }
+  ],
+  "window": {
+    "enableLargeWindow": true,
+    "showRefreshButton": true,
+    "windowWidth": 600,
+    "windowHeight": 640,
+    "minWindowWidth": 400,
+    "minWindowHeight": 400,
+    "enableResize": true
+  },
+  "sdkversion": "1.0.0",
+  "sitemapLocation": "sitemap.json"
+}
